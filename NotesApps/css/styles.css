@@ -1,0 +1,74 @@
+*{
+    padding: 5px;
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: #B4B4B8;
+    color: #4a4b50;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #C7C8CC;
+}
+
+/* CSS Grid layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+/* Optional: Styling for a more appealing UI */
+
+form {
+    margin-bottom: 20px;
+    background-color: #E3E1D9;
+}
+label, input, textarea {
+    display: block;
+    margin-bottom: 5px;
+    padding: center;
+    background-color: #F2EFE5;
+    ;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #B4B4B8;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+    main aside {
+        align-self: center;
+    }
+    .btn {
+        padding: 10px;
+    }
+}
+
+
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+    main aside {
+        align-self: stretch;
+    }
+    .btn {
+        padding: 10px;
+    }
+}
